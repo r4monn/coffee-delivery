@@ -2,11 +2,14 @@
   "name": "coffee-delivery",
   "private": true,
   "version": "0.0.0",
+  "homepage": "http://r4monn.github.io/coffee-delivery",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@hookform/resolvers": "^2.9.8",
